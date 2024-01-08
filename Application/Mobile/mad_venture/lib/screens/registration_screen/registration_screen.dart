@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:mad_venture/screens/registration_screen/registration_screen.dart';
 import 'package:mad_venture/tools/theme.dart';
 import 'package:mad_venture/widgets/green_elevated_button/green_elevated_button.dart';
 import 'package:mad_venture/widgets/green_text_field/green_text_field.dart';
 
-class AuthorizationScreen extends StatefulWidget {
-  const AuthorizationScreen({super.key});
+class RegistrationScreen extends StatefulWidget {
+  const RegistrationScreen({super.key});
 
   @override
-  State<AuthorizationScreen> createState() => _AuthorizationScreenState();
+  State<RegistrationScreen> createState() => _RegistrationScreenState();
 }
 
-class _AuthorizationScreenState extends State<AuthorizationScreen> {
+class _RegistrationScreenState extends State<RegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //resizeToAvoidBottomInset: false,
       backgroundColor: Colors.black,
       body: Container(
         decoration: const BoxDecoration(
@@ -46,55 +44,62 @@ class _AuthorizationScreenState extends State<AuthorizationScreen> {
                         const SizedBox(
                           height: 30,
                         ),
-                        GreenTextField(hint: "Email",),
-                        const SizedBox(
-                          height: 30,
+                        const GreenTextField(
+                          hint: "Email",
                         ),
-                        GreenTextField(hint: "Password",),
+                        const GreenTextField(
+                          hint: "Nickname",
+                        ),
+                        const Row(
+                          children: [
+                            Text(
+                              "+",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Expanded(
+                                child: GreenTextField(
+                              hint: "Code",
+                            )),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Expanded(
+                                flex: 6,
+                                child: GreenTextField(
+                                  hint: "Phone",
+                                ))
+                          ],
+                        ),
+                        const GreenTextField(
+                          hint: "Password",
+                        ),
+                        const GreenTextField(
+                          hint: "Repeat password",
+                        ),
                         const SizedBox(
                           height: 30,
                         ),
                         GreenElevatedButtonBase(
                           items: [
                             Text(
-                              "Sign in",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: MyTheme.font,
-                                  fontSize: 20),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 30,
-                        ),
-                        GreenElevatedButtonBase(
-                          items: [
-                            const Icon(
-                              Icons.facebook,
-                              color: Colors.white,
-                              size: 20,
-                            ),
-                            Text(
-                              "Sign in with Facebook",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: MyTheme.font,
-                                  fontSize: 20),
-                            ),
-                          ],
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => const RegistrationScreen()));
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(20),
-                            child: Text(
                               "Sign up",
                               style: TextStyle(
-                                  color: MyTheme.accentColor, fontSize: 20),
+                                  color: Colors.white,
+                                  fontFamily: MyTheme.font,
+                                  fontSize: 20),
                             ),
+                          ],
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Text(
+                            "Sign up",
+                            style: TextStyle(
+                                color: MyTheme.accentColor, fontSize: 20),
                           ),
                         )
                       ],
