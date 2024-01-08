@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mad_venture/data/samples.dart';
+import 'package:mad_venture/screens/authorization_screen/authorization_screen.dart';
 import 'package:mad_venture/tools/theme.dart';
 
 class OnboardScreen extends StatefulWidget {
@@ -32,6 +33,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
           duration: const Duration(milliseconds: 300), curve: Curves.easeInOut);
     }else{
       //next screen
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const AuthorizationScreen()));
     }
   }
 
