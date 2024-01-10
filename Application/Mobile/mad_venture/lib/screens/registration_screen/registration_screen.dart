@@ -84,6 +84,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           height: 30,
                         ),
                         GreenElevatedButtonBase(
+                          ontap: (){},
                           items: [
                             Text(
                               "Sign up",

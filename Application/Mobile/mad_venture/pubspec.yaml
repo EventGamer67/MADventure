@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.9
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +23,7 @@ flutter:
     - assets/images/splash_screen_background.png
     - assets/images/logo.png
     - assets/images/map_background.png
+    - assets/svg/error.svg
 
   fonts:
     - family: Gotham
