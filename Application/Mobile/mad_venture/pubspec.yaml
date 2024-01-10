@@ -24,6 +24,7 @@ flutter:
     - assets/images/logo.png
     - assets/images/map_background.png
     - assets/svg/error.svg
+    - assets/svg/success.svg
 
   fonts:
     - family: Gotham

@@ -1,0 +1,1 @@
+enum MessageDialogTypes { error, success }

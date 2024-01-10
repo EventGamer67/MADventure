@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mad_venture/screens/splash_screen/splash_screen.dart';
+import 'package:mad_venture/ui/screens/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MainApp());

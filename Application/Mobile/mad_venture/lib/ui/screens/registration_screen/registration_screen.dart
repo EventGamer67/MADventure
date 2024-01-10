@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mad_venture/tools/theme.dart';
-import 'package:mad_venture/widgets/green_elevated_button/green_elevated_button.dart';
-import 'package:mad_venture/widgets/green_text_field/green_text_field.dart';
+import 'package:mad_venture/ui/widgets/green_elevated_button/green_elevated_button.dart';
+import 'package:mad_venture/ui/widgets/green_text_field/green_text_field.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});

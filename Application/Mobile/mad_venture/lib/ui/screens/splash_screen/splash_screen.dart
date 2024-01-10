@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mad_venture/screens/onboard_screen/onboard_screen.dart';
+import 'package:mad_venture/ui/screens/onboard_screen/onboard_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

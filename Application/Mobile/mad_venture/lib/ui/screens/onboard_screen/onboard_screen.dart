@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mad_venture/data/samples.dart';
-import 'package:mad_venture/screens/authorization_screen/authorization_screen.dart';
+import 'package:mad_venture/ui/screens/authorization_screen/authorization_screen.dart';
 import 'package:mad_venture/tools/theme.dart';
 
 class OnboardScreen extends StatefulWidget {
