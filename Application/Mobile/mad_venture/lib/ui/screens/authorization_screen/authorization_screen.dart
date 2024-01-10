@@ -3,6 +3,7 @@ import 'package:mad_venture/ui/popups/message_dialog/message_dialog.dart';
 import 'package:mad_venture/ui/popups/message_dialog/message_dialog_types.dart';
 import 'package:mad_venture/ui/screens/registration_screen/registration_screen.dart';
 import 'package:mad_venture/tools/theme.dart';
+import 'package:mad_venture/ui/screens/registration_screen/registration_screen_phone_activation.dart';
 import 'package:mad_venture/ui/widgets/green_elevated_button/green_elevated_button.dart';
 import 'package:mad_venture/ui/widgets/green_text_field/green_text_field.dart';
 
@@ -62,12 +63,11 @@ class _AuthorizationScreenState extends State<AuthorizationScreen> {
                         ),
                         GreenElevatedButtonBase(
                           ontap: () {
-                            showDialog(
-                                context: context,
-                                builder: (context) => const MessageDialog(
-                                      message: 'test message',
-                                      type: MessageDialogTypes.error,
-                                    ));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: ((context) =>
+                                        const RegistrationScreenPhoneActivation())));
                           },
                           items: [
                             Text(
