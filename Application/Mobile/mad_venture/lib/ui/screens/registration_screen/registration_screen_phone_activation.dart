@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mad_venture/tools/theme.dart';
-import 'package:mad_venture/ui/widgets/green_elevated_button/green_elevated_button.dart';
 import 'package:mad_venture/ui/widgets/green_text_field/green_text_field.dart';
 
 class RegistrationScreenPhoneActivation extends StatefulWidget {
@@ -67,11 +66,11 @@ class _RegistrationScreenPhoneActivationState
                         const SizedBox(
                           height: 10,
                         ),
-                        Container(
+                        SizedBox(
                           height: 70,
                           child: Row(mainAxisSize: MainAxisSize.min, children: [
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 5),
+                              padding: const EdgeInsets.symmetric(horizontal: 5),
                               height: 60,
                               width: 60,
                               child: GreenTextField(
@@ -85,7 +84,7 @@ class _RegistrationScreenPhoneActivationState
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 5),
+                              padding: const EdgeInsets.symmetric(horizontal: 5),
                               height: 60,
                               width: 60,
                               child: GreenTextField(
@@ -99,7 +98,7 @@ class _RegistrationScreenPhoneActivationState
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 5),
+                              padding: const EdgeInsets.symmetric(horizontal: 5),
                               height: 60,
                               width: 60,
                               child: GreenTextField(
@@ -113,7 +112,7 @@ class _RegistrationScreenPhoneActivationState
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 5),
+                              padding: const EdgeInsets.symmetric(horizontal: 5),
                               height: 60,
                               width: 60,
                               child: GreenTextField(

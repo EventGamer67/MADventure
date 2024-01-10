@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mad_venture/ui/popups/message_dialog/message_dialog.dart';
-import 'package:mad_venture/ui/popups/message_dialog/message_dialog_types.dart';
 import 'package:mad_venture/ui/screens/registration_screen/registration_screen.dart';
 import 'package:mad_venture/tools/theme.dart';
 import 'package:mad_venture/ui/screens/registration_screen/registration_screen_phone_activation.dart';
